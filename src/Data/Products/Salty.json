@@ -1,0 +1,18 @@
+[
+    {
+        "Id": "Анчоус Флотская 40г",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "Salty" ],
+        "Weight": 40,
+        "CaloriesPer100g": 0
+    },
+    {
+        "Id": "Сухарики ржан (семга/сыр/тартар) 60г/25г",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "Salty" ],
+        "Weight": 85,
+        "CaloriesPer100g": 0
+    }
+]

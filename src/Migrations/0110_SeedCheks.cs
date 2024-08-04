@@ -11,17 +11,22 @@ namespace CostKeeper.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            var products = FileExtensions.LoadFromJsonFile<Check[]>("Logs\\AugustChecks.json");
+            var files = Directory.GetFiles("Data\\Checks\\August");
 
-            foreach (var p in products)
+            var id = 1;
+            foreach (var file in files)
             {
-                migrationBuilder.InsertData(
-                    table: "Checks",
-                    columns: ["Id", "ProductId", "Date", "Price", "Count"],
-                    values: new object[,]
-                    {
-                        { p.Id, p.ProductId, p.Date, p.Price, p.Count },
-                    });
+                var fileName = Path.GetFileNameWithoutExtension(file);
+                var date = DateTime.Parse(fileName);
+                // "Date": "2024-08-04T00:00:00.0000000Z"
+
+                MigrationsExtensions.LoadFromJson<Check>(
+                    migrationBuilder,
+                    "Checks",
+                    file,
+                    ["Id", "ProductId", "Date", "Price", "Count"],
+                    a => new object[,] { { id++, a.ProductId, date.ToUniversalTime(), a.Price, a.Count } }
+                    );
             }
         }
 

@@ -1,0 +1,82 @@
+[
+    {
+        "Id": "Творог Рассыпчатый 2% Сав пр 350г",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "Cottage cheese" ],
+        "Weight": 350,
+        "CaloriesPer100g": 0
+    },
+    {
+        "Id": "Каша Быстров (овсян,черника) 40г",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "Porridge" ],
+        "Weight": 40,
+        "CaloriesPer100g": 0
+    },
+    {
+        "Id": "Сельдб Баренцево (филе-кус,бел.соус) 180г",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "Herring" ],
+        "Weight": 180,
+        "CaloriesPer100g": 15
+    },
+    {
+        "Id": "Мясо мидии чилийской (в заливке) 180г",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "Herring" ],
+        "Weight": 180,
+        "CaloriesPer100g": 15
+    },
+    {
+        "Id": "Хлеб Бабулин 500г",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "Bread" ],
+        "Weight": 500,
+        "CaloriesPer100g": 15
+    },
+    {
+        "Id": "Сыр плавл. Брест-Литовск 40% 150г",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "Cheese" ],
+        "Weight": 150,
+        "CaloriesPer100g": 15
+    },
+    {
+        "Id": "Яйца куриные Omegga C-2 10шт",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "Eggs" ],
+        "Weight": 50,
+        "CaloriesPer100g": 200
+    },
+    {
+        "Id": "Паштет Нежный (мб) Колос 180г",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "Pate" ],
+        "Weight": 180,
+        "CaloriesPer100g": 0
+    },
+    {
+        "Id": "Лапша удон с филе ципленка карри",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "Cafe" ],
+        "Weight": 0,
+        "CaloriesPer100g": 0
+    },
+    {
+        "Id": "Холодник на кефире 300г",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "Cafe" ],
+        "Weight": 0,
+        "CaloriesPer100g": 0
+    }
+]

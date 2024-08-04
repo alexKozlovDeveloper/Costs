@@ -1,0 +1,10 @@
+[
+    {
+        "Id": "Pepsi (w/o sugar) 1.5l",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "Drinks" ],
+        "Weight": 1500,
+        "CaloriesPer100g": 0
+    }
+]

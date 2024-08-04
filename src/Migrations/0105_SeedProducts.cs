@@ -11,17 +11,17 @@ namespace CostKeeper.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            var products = FileExtensions.LoadFromJsonFile<Product[]>("Logs\\Products.json");
+            var files = Directory.GetFiles("Data\\Products");
 
-            foreach (var p in products)
+            foreach (var file in files) 
             {
-                migrationBuilder.InsertData(
-                    table: "Products",
-                    columns: ["Id", "Description", "Category", "Tags", "Weight", "CaloriesPer100g"],
-                    values: new object[,]
-                    {
-                        { p.Id, p.Description, p.Category, p.Tags, p.Weight, p.CaloriesPer100g },
-                    });
+                MigrationsExtensions.LoadFromJson<Product>(
+                    migrationBuilder,
+                    "Products",
+                    file,
+                    ["Id", "Description", "Category", "Tags", "Weight", "CaloriesPer100g"],
+                    a => new object[,] { { a.Id, a.Description, a.Category, a.Tags, a.Weight, a.CaloriesPer100g } }
+                    );
             }
         }
 

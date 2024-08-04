@@ -4,7 +4,7 @@ namespace CostKeeper
 {
     public static class FileExtensions
     {
-        public static T LoadFromJsonFile<T>(string filePath) 
+        public static T? LoadFromJsonFile<T>(string filePath) 
         {
             string jsonString = File.ReadAllText(filePath);
 

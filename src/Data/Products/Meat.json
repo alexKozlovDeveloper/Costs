@@ -1,0 +1,18 @@
+[
+    {
+        "Id": "Прод. с/к Пастрома Гурман 1кг",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "Meat" ],
+        "Weight": 1000,
+        "CaloriesPer100g": 130
+    },
+    {
+        "Id": "Сосиски Мортаделлия 320г",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "Meat", "Sausages" ],
+        "Weight": 320,
+        "CaloriesPer100g": 0
+    }
+]

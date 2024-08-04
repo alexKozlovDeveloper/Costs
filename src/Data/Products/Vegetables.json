@@ -1,0 +1,26 @@
+[
+    {
+        "Id": "Огурец гладкий 1кг",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "Vegetables" ],
+        "Weight": 1000,
+        "CaloriesPer100g": 15
+    },
+    {
+        "Id": "Кукуруза молодая Бондюель 425г",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "Herring" ],
+        "Weight": 425,
+        "CaloriesPer100g": 15
+    },
+    {
+        "Id": "Маслины Iberica с косточкой 280г",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "Olives" ],
+        "Weight": 280,
+        "CaloriesPer100g": 0
+    }
+]
