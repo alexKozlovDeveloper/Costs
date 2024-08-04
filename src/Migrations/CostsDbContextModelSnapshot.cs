@@ -30,8 +30,8 @@ namespace CostKeeper.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Count")
-                        .HasColumnType("integer");
+                    b.Property<float>("Count")
+                        .HasColumnType("real");
 
                     b.Property<DateTime>("Date")
                         .HasColumnType("timestamp with time zone");

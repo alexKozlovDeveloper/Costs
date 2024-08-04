@@ -37,7 +37,7 @@ namespace CostKeeper.Migrations
                     ProductId = table.Column<string>(type: "text", nullable: false),
                     Date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     Price = table.Column<float>(type: "real", nullable: false),
-                    Count = table.Column<int>(type: "integer", nullable: false)
+                    Count = table.Column<float>(type: "real", nullable: false)
                 },
                 constraints: table =>
                 {

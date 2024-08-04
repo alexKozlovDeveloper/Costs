@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace CostKeeper.Migrations
 {
     [DbContext(typeof(CostsDbContext))]
-    [Migration("20240804003739_SeedCheks")]
-    partial class SeedCheks
+    [Migration("0100_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,8 +33,8 @@ namespace CostKeeper.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Count")
-                        .HasColumnType("integer");
+                    b.Property<float>("Count")
+                        .HasColumnType("real");
 
                     b.Property<DateTime>("Date")
                         .HasColumnType("timestamp with time zone");
