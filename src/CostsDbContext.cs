@@ -6,7 +6,7 @@ namespace CostKeeper
 {
     public class CostsDbContext(DbContextOptions<CostsDbContext> options) : DbContext(options)
     {
-        public DbSet<Product> Products { get; set; }
+		public DbSet<Product> Products { get; set; }
         public DbSet<Check> Checks { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -17,9 +17,10 @@ namespace CostKeeper
                     .AddJsonFile("appsettings.json")
                     .Build();
 
-                var connectionString = configuration.GetConnectionString("DefaultConnection");
+                var connectionString = configuration.GetConnectionString("Default");
                 optionsBuilder.UseNpgsql(connectionString);
             }
+
         }
     }
 }
