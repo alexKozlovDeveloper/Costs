@@ -5,7 +5,7 @@ namespace CostKeeper
     public static class MigrationsExtensions
     {
         public static void LoadFromJson<T>(
-            MigrationBuilder migrationBuilder, 
+			MigrationBuilder migrationBuilder, 
             string tableName,
             string filePath,
             string[] labels,

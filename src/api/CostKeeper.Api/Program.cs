@@ -12,9 +12,9 @@ builder.Services.AddSwaggerGen();
 
 
 builder.Services.AddDbContext<CostsDbContext>(
-	options => 
-	{ 
-		options.UseNpgsql(builder.Configuration.GetConnectionString("Default")); 
+	options =>
+	{
+		options.UseNpgsql(builder.Configuration.GetConnectionString("Default"));
 	},
 	ServiceLifetime.Scoped
 	);

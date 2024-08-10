@@ -8,11 +8,12 @@
 
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.4.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\CostKeeper.csproj" />
+    <ProjectReference Include="..\CostKeeper.Core\CostKeeper.Core.csproj" />
   </ItemGroup>
 
 </Project>

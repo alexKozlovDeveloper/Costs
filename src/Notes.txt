@@ -1,2 +1,0 @@
-﻿Category: "Food", "Cat", "Household", "Transport"
-Tags: "Meat", "Drinks", "Salty", "Sweet"

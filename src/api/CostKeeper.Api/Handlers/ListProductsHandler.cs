@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 namespace CostKeeper.Api.Handlers
 {
 	[ApiController]
-	[Route("v1/costs")]
+	[Route("v1/products")]
 	public class ListProductsController(IMediator mediator) : ControllerBase
 	{
 		private readonly IMediator _mediator = mediator;

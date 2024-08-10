@@ -1,4 +1,4 @@
-@CostKeeper.Api_HostAddress = http://localhost:5154
+@CostKeeper.Api_HostAddress = http://localhost:5088
 
 GET {{CostKeeper.Api_HostAddress}}/weatherforecast/
 Accept: application/json
