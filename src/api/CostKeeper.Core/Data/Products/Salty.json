@@ -1,18 +1,24 @@
 [
     {
-        "Id": "Анчоус Флотская 40г",
+        "Id": "Анчоус сушеный «Флотская» соленый, 40 г",
         "Description": "",
         "Category": "Food",
-        "Tags": [ "Salty" ],
+        "Tags": [ "анчоус" ],
         "Weight": 40,
-        "CaloriesPer100g": 0
+        "EnergyValue": 235,
+        "Proteins": 46.4,
+        "Fats": 5.5,
+        "Carbohydrates": 0
     },
     {
-        "Id": "Сухарики ржан (семга/сыр/тартар) 60г/25г",
+        "Id": "Сухарики «Кириешки» семга с сыром с соусом тар-тар, 60 г",
         "Description": "",
         "Category": "Food",
         "Tags": [ "Salty" ],
-        "Weight": 85,
-        "CaloriesPer100g": 0
+        "Weight": 80,
+        "EnergyValue": 124,
+        "Proteins": 0.5,
+        "Fats": 9,
+        "Carbohydrates": 9.7
     }
 ]

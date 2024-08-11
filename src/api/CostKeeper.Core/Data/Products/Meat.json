@@ -1,18 +1,24 @@
 [
     {
-        "Id": "Прод. с/к Пастрома Гурман 1кг",
+        "Id": "Продукт сырокопченый «Пастрома Гурман» из мяса птицы, 1 кг",
         "Description": "",
         "Category": "Food",
-        "Tags": [ "Meat" ],
+        "Tags": [ "мясо", "сырокопченое", "курица" ],
         "Weight": 1000,
-        "CaloriesPer100g": 130
+        "EnergyValue": 1,
+        "Proteins": 29,
+        "Fats": 2,
+        "Carbohydrates": 1
     },
     {
-        "Id": "Сосиски Мортаделлия 320г",
+        "Id": "Сосиски из мяса цыпленка-бройлера «Мортаделлия» высшего сорта, 320 г",
         "Description": "",
         "Category": "Food",
-        "Tags": [ "Meat", "Sausages" ],
+        "Tags": [ "мясо", "сосиски" ],
         "Weight": 320,
-        "CaloriesPer100g": 0
+        "EnergyValue": 1,
+        "Proteins": 10,
+        "Fats": 24,
+        "Carbohydrates": 2
     }
 ]

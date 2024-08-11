@@ -1,26 +1,35 @@
 [
     {
-        "Id": "Огурец гладкий 1кг",
+        "Id": "Огурец 1кг",
         "Description": "",
         "Category": "Food",
-        "Tags": [ "Vegetables" ],
+        "Tags": [ "овощи" ],
         "Weight": 1000,
-        "CaloriesPer100g": 15
+        "EnergyValue": 14,
+        "Proteins": 0.8,
+        "Fats": 8.1,
+        "Carbohydrates": 2.5
     },
     {
-        "Id": "Кукуруза молодая Бондюель 425г",
+        "Id": "Кукуруза консервированная «Bonduelle» сладкая молодая, 340 г",
         "Description": "",
         "Category": "Food",
-        "Tags": [ "Herring" ],
-        "Weight": 425,
-        "CaloriesPer100g": 15
+        "Tags": [ "овощи", "кукуруза" ],
+        "Weight": 340,
+        "EnergyValue": 80,
+        "Proteins": 2.9,
+        "Fats": 1.9,
+        "Carbohydrates": 10.8
     },
     {
-        "Id": "Маслины Iberica с косточкой 280г",
+        "Id": "Маслины «Iberica» с косточкой, 280 г",
         "Description": "",
         "Category": "Food",
-        "Tags": [ "Olives" ],
+        "Tags": [ "овощи", "оливки" ],
         "Weight": 280,
-        "CaloriesPer100g": 0
+        "EnergyValue": 162,
+        "Proteins": 0.5,
+        "Fats": 17,
+        "Carbohydrates": 0
     }
 ]

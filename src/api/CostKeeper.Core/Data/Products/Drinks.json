@@ -1,10 +1,35 @@
 [
     {
-        "Id": "Pepsi (w/o sugar) 1.5l",
+        "Id": "Газированный напиток PEPSI БЕЗ САХАРА 1.5 литра",
         "Description": "",
         "Category": "Food",
-        "Tags": [ "Drinks" ],
+        "Tags": [ "напитки" ],
         "Weight": 1500,
-        "CaloriesPer100g": 0
+        "EnergyValue": 1,
+        "Proteins": 0,
+        "Fats": 0,
+        "Carbohydrates": 0
+    },
+    {
+        "Id": "Молочный коктейль «Топ шейк» ваниль, 2%, 450 г",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "напитки" ],
+        "Weight": 450,
+        "EnergyValue": 69,
+        "Proteins": 2.9,
+        "Fats": 2,
+        "Carbohydrates": 9.87
+    },
+    {
+        "Id": "Напиток лимонный 300 мл",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "напитки", "кафе" ],
+        "Weight": 300,
+        "EnergyValue": 69,
+        "Proteins": 0,
+        "Fats": 0,
+        "Carbohydrates": 10.1
     }
 ]

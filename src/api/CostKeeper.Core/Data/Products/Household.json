@@ -1,10 +1,14 @@
 [
     {
-        "Id": "DONA AROMA",
+        "Id": "Бумага туалетная «Dona» Aroma, 2 слоя, 4 шт",
         "Description": "",
         "Category": "Household",
-        "Tags": [ "Toilet paper" ],
-        "Weight": 0,
-        "CaloriesPer100g": 0
+        "Tags": [ "туалетная бумага" ]
+    },
+    {
+        "Id": "Крем-гель для душа «Lilea» аб­ри­кос и кар­да­мон, 1000 мл",
+        "Description": "",
+        "Category": "Household",
+        "Tags": [ "гель для душа", "пена для ванны" ]
     }
 ]
