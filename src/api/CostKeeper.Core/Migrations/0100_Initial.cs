@@ -4,7 +4,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace CostKeeper.Migrations
+namespace CostKeeper.Core.Migrations
 {
     /// <inheritdoc />
     public partial class Initial : Migration
@@ -20,8 +20,11 @@ namespace CostKeeper.Migrations
                     Description = table.Column<string>(type: "text", nullable: true),
                     Category = table.Column<string>(type: "text", nullable: false),
                     Tags = table.Column<string[]>(type: "text[]", nullable: false),
-                    Weight = table.Column<int>(type: "integer", nullable: false),
-                    CaloriesPer100g = table.Column<int>(type: "integer", nullable: false)
+                    Weight = table.Column<float>(type: "real", nullable: true),
+                    EnergyValue = table.Column<float>(type: "real", nullable: true),
+                    Proteins = table.Column<float>(type: "real", nullable: true),
+                    Fats = table.Column<float>(type: "real", nullable: true),
+                    Carbohydrates = table.Column<float>(type: "real", nullable: true)
                 },
                 constraints: table =>
                 {

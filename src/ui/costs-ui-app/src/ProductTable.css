@@ -18,6 +18,7 @@
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
+  background-color: gray;
 }
 
 .table th, .table td {

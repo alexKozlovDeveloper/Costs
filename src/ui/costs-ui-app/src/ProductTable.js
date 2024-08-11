@@ -58,7 +58,10 @@ function ProductTable() {
             <th>Category</th>
             <th>Tags</th>
             <th>Weight</th>
-            <th>CaloriesPer100g</th>
+            <th>Energy Value</th>
+            <th>Proteins</th>
+            <th>Fats</th>
+            <th>Carbohydrates</th>
             </tr>
           </thead>
           <tbody className="table">
@@ -69,7 +72,10 @@ function ProductTable() {
               <td>{product.category}</td>
               <td>{product.tags}</td>
               <td>{product.weight}</td>
-              <td>{product.caloriesPer100g}</td>
+              <td>{product.energyValue}</td>
+              <td>{product.proteins}</td>
+              <td>{product.fats}</td>
+              <td>{product.carbohydrates}</td>
             </tr>
             ))}
           </tbody>

@@ -9,7 +9,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace CostKeeper.Migrations
+namespace CostKeeper.Core.Migrations
 {
     [DbContext(typeof(CostsDbContext))]
     [Migration("0110_SeedCheks")]
@@ -58,8 +58,8 @@ namespace CostKeeper.Migrations
                     b.Property<string>("Id")
                         .HasColumnType("text");
 
-                    b.Property<int>("CaloriesPer100g")
-                        .HasColumnType("integer");
+                    b.Property<float?>("Carbohydrates")
+                        .HasColumnType("real");
 
                     b.Property<string>("Category")
                         .IsRequired()
@@ -68,12 +68,21 @@ namespace CostKeeper.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("text");
 
+                    b.Property<float?>("EnergyValue")
+                        .HasColumnType("real");
+
+                    b.Property<float?>("Fats")
+                        .HasColumnType("real");
+
+                    b.Property<float?>("Proteins")
+                        .HasColumnType("real");
+
                     b.Property<string[]>("Tags")
                         .IsRequired()
                         .HasColumnType("text[]");
 
-                    b.Property<int>("Weight")
-                        .HasColumnType("integer");
+                    b.Property<float?>("Weight")
+                        .HasColumnType("real");
 
                     b.HasKey("Id");
 
