@@ -12,14 +12,18 @@ namespace CostKeeper.Api.Handlers
 		private readonly IMediator _mediator = mediator;
 
 		[HttpGet]
-		public async Task<ActionResult<IEnumerable<Product>>> Handle()
+		public async Task<ActionResult<IEnumerable<Product>>> Handle(
+			[FromQuery] string? query
+			)
 		{
-			var items = await _mediator.Send(new ListProductsQuery());
+			var items = await _mediator.Send(new ListProductsQuery(query));
 			return Ok(items);
 		}
 	}
 
-	public record ListProductsQuery() : IRequest<IEnumerable<Product>>;
+	public record ListProductsQuery(
+		string? Query
+		) : IRequest<IEnumerable<Product>>;
 
 	public class ListProductsHandler(CostsDbContext dbContext) : IRequestHandler<ListProductsQuery, IEnumerable<Product>>
 	{
@@ -27,9 +31,16 @@ namespace CostKeeper.Api.Handlers
 
 		public async Task<IEnumerable<Product>> Handle(ListProductsQuery request, CancellationToken ct)
 		{
-			var items = await _dbContext.Products.ToListAsync(ct);
+			var query = _dbContext.Products
+				.AsQueryable()
+				.AsNoTracking();
 
-			return items;
+			if(!string.IsNullOrEmpty(request.Query))
+			{
+				query = query.Where(a => a.Id.ToLower().Contains(request.Query.ToLower()));
+			}
+
+			return await query.ToListAsync(ct);
 		}
 	}
 }

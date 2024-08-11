@@ -1,0 +1,9 @@
+﻿
+DB:
+
+docker run --name costs-pg-db -p 5432:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=Admi$in1! -e POSTGRES_DB=CostsDB -d postgres:13.3
+
+SQL:
+
+SELECT public."Checks"."ProductId", public."Checks"."Price", public."Checks"."Count" FROM public."Checks"
+join public."Products" on public."Checks"."ProductId" = public."Products"."Id"
