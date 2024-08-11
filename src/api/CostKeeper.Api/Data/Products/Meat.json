@@ -5,7 +5,7 @@
         "Category": "Food",
         "Tags": [ "мясо", "сырокопченое", "курица" ],
         "Weight": 1000,
-        "EnergyValue": 1,
+        "EnergyValue": 135,
         "Proteins": 29,
         "Fats": 2,
         "Carbohydrates": 1
@@ -16,9 +16,20 @@
         "Category": "Food",
         "Tags": [ "мясо", "сосиски" ],
         "Weight": 320,
-        "EnergyValue": 1,
+        "EnergyValue": 260,
         "Proteins": 10,
         "Fats": 24,
         "Carbohydrates": 2
+    },
+    {
+        "Id": "Колбаски варено-копченые «Кабаносы» высший сорт, 550 г",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "мясо", "сосиски", "колбаски" ],
+        "Weight": 550,
+        "EnergyValue": 340,
+        "Proteins": 12,
+        "Fats": 32,
+        "Carbohydrates": 0
     }
 ]

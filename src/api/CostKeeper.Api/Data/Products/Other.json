@@ -108,5 +108,60 @@
         "Proteins": 3.5,
         "Fats": 4,
         "Carbohydrates": 5.5
+    },
+    {
+        "Id": "Крупа гречневая «Бабушкина кухня» любимая, 700 г",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "кафе", "суп" ],
+        "Weight": 700,
+        "EnergyValue": 340,
+        "Proteins": 13,
+        "Fats": 3,
+        "Carbohydrates": 66
+    },
+    {
+        "Id": "Крабовые палочки «Санта Бремор» охлажденные, 200 г",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "крабовые палочки" ],
+        "Weight": 200,
+        "EnergyValue": 80,
+        "Proteins": 6.5,
+        "Fats": 0,
+        "Carbohydrates": 13.5
+    },
+    {
+        "Id": "Томаты маринованные «Green Ray» черри, 680 г",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "крабовые палочки" ],
+        "Weight": 200,
+        "EnergyValue": 68,
+        "Proteins": 0,
+        "Fats": 0,
+        "Carbohydrates": 4
+    },
+    {
+        "Id": "Соус Calve, Баварский медово-горчичный, 230 г",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "соус" ],
+        "Weight": 230,
+        "EnergyValue": 270,
+        "Proteins": 0.7,
+        "Fats": 25,
+        "Carbohydrates": 11.8
+    },
+    {
+        "Id": "Хлеб «Ржаной край» нарезанный, 250 г",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "хлеб" ],
+        "Weight": 250,
+        "EnergyValue": 220,
+        "Proteins": 7.1,
+        "Fats": 0.6,
+        "Carbohydrates": 46.2
     }
 ]

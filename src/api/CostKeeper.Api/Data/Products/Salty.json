@@ -3,7 +3,7 @@
         "Id": "Анчоус сушеный «Флотская» соленый, 40 г",
         "Description": "",
         "Category": "Food",
-        "Tags": [ "анчоус" ],
+        "Tags": [ "соленое", "анчоус" ],
         "Weight": 40,
         "EnergyValue": 235,
         "Proteins": 46.4,
@@ -14,11 +14,22 @@
         "Id": "Сухарики «Кириешки» семга с сыром с соусом тар-тар, 60 г",
         "Description": "",
         "Category": "Food",
-        "Tags": [ "Salty" ],
+        "Tags": [ "соленое" ],
         "Weight": 80,
         "EnergyValue": 124,
         "Proteins": 0.5,
         "Fats": 9,
         "Carbohydrates": 9.7
+    },
+    {
+        "Id": "Семечки подсолнечника «Бабкины семечки» с морской солью, 100 г",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "соленое" ],
+        "Weight": 100,
+        "EnergyValue": 581,
+        "Proteins": 27,
+        "Fats": 49,
+        "Carbohydrates": 8.5
     }
 ]

@@ -1,3 +1,35 @@
 [
-
+	{
+		"Id": "Мороженое «Soletto» гранат и лимон, 75 г",
+		"Description": "",
+		"Category": "Food",
+		"Tags": [ "сладкое", "мороженое" ],
+		"Weight": 75,
+		"EnergyValue": 240,
+		"Proteins": 3,
+		"Fats": 10,
+		"Carbohydrates": 35
+	},
+	{
+		"Id": "Конфеты глазированные «Коммунарка» Грильяж в шоколаде, 1 кг",
+		"Description": "",
+		"Category": "Food",
+		"Tags": [ "сладкое", "конфеты" ],
+		"Weight": 1000,
+		"EnergyValue": 430,
+		"Proteins": 5.6,
+		"Fats": 26.5,
+		"Carbohydrates": 64.3
+	},
+	{
+		"Id": "Кон­фе­ты гла­зи­ро­ван­ные «Комму­нар­ка» Мин­ский гри­льяж, 1 кг",
+		"Description": "",
+		"Category": "Food",
+		"Tags": [ "сладкое", "конфеты" ],
+		"Weight": 1000,
+		"EnergyValue": 418,
+		"Proteins": 4.3,
+		"Fats": 13.6,
+		"Carbohydrates": 69.7
+	}
 ]

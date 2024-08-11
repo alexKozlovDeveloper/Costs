@@ -1,4 +1,5 @@
-﻿using CostKeeper.Models;
+﻿using CostKeeper.Api.Models;
+using CostKeeper.Models;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -12,7 +13,7 @@ namespace CostKeeper.Api.Handlers
 		private readonly IMediator _mediator = mediator;
 
 		[HttpGet]
-		public async Task<ActionResult<IEnumerable<Product>>> Handle(
+		public async Task<ActionResult<IEnumerable<ProductDto>>> Handle(
 			[FromQuery] string? query
 			)
 		{
@@ -23,13 +24,13 @@ namespace CostKeeper.Api.Handlers
 
 	public record ListProductsQuery(
 		string? Query
-		) : IRequest<IEnumerable<Product>>;
+		) : IRequest<IEnumerable<ProductDto>>;
 
-	public class ListProductsHandler(CostsDbContext dbContext) : IRequestHandler<ListProductsQuery, IEnumerable<Product>>
+	public class ListProductsHandler(CostsDbContext dbContext) : IRequestHandler<ListProductsQuery, IEnumerable<ProductDto>>
 	{
 		private readonly CostsDbContext _dbContext = dbContext;
 
-		public async Task<IEnumerable<Product>> Handle(ListProductsQuery request, CancellationToken ct)
+		public async Task<IEnumerable<ProductDto>> Handle(ListProductsQuery request, CancellationToken ct)
 		{
 			var query = _dbContext.Products
 				.AsQueryable()
@@ -40,7 +41,21 @@ namespace CostKeeper.Api.Handlers
 				query = query.Where(a => a.Id.ToLower().Contains(request.Query.ToLower()));
 			}
 
-			return await query.ToListAsync(ct);
+			return await query
+				.Select(a => new ProductDto 
+				{
+					Id = a.Id,
+					Description = a.Description,
+					Category = a.Category,
+					Tags = a.Tags,
+					Weight = a.Weight,
+					EnergyValue = a.EnergyValue,
+					Proteins = a.Proteins,
+					Fats = a.Fats,
+					Carbohydrates = a.Carbohydrates,
+					ProductUnitEnergyValue = a.EnergyValue * a.Weight * 0.01f
+				})
+				.ToListAsync(ct);
 		}
 	}
 }

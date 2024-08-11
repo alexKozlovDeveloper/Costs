@@ -62,6 +62,7 @@ function ProductTable() {
             <th>Proteins</th>
             <th>Fats</th>
             <th>Carbohydrates</th>
+            <th>Product Energy Value</th>
             </tr>
           </thead>
           <tbody className="table">
@@ -76,6 +77,7 @@ function ProductTable() {
               <td>{product.proteins}</td>
               <td>{product.fats}</td>
               <td>{product.carbohydrates}</td>
+              <td>{product.productUnitEnergyValue}</td>
             </tr>
             ))}
           </tbody>

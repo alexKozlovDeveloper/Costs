@@ -31,5 +31,38 @@
         "Proteins": 0.5,
         "Fats": 17,
         "Carbohydrates": 0
+    },
+    {
+        "Id": "Лимон 1 кг",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "фрукты" ],
+        "Weight": 1000,
+        "EnergyValue": 34,
+        "Proteins": 0.9,
+        "Fats": 0.1,
+        "Carbohydrates": 3
+    },
+    {
+        "Id": "Арбуз 1 кг",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "фрукты" ],
+        "Weight": 1000,
+        "EnergyValue": 12,
+        "Proteins": 1.2,
+        "Fats": 0.2,
+        "Carbohydrates": 3.2
+    },
+    {
+        "Id": "Томат / Помидор 1 кг",
+        "Description": "",
+        "Category": "Food",
+        "Tags": [ "овощи" ],
+        "Weight": 1000,
+        "EnergyValue": 23,
+        "Proteins": 1.1,
+        "Fats": 0.2,
+        "Carbohydrates": 3.7
     }
 ]

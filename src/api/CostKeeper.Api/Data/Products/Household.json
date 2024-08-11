@@ -10,5 +10,17 @@
         "Description": "",
         "Category": "Household",
         "Tags": [ "гель для душа", "пена для ванны" ]
+    },
+    {
+        "Id": "Приправа «Cykoria» для курицы, 40 г",
+        "Description": "",
+        "Category": "Household",
+        "Tags": [ "приправа" ]
+    },
+    {
+        "Id": "Тетрадь общая «HanzKoger» Мультяшки, в клетку, 96 листов",
+        "Description": "",
+        "Category": "Household",
+        "Tags": [ "тетрадь" ]
     }
 ]
