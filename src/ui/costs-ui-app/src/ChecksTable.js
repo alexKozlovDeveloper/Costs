@@ -37,36 +37,42 @@ function ChecksTable() {
   if (error) return <p>Error: {error.message}</p>;
 
   return (
-    <div className="table-container">
-      <input
-        type="text"
-        placeholder="Search..."
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-        ref={searchInputRef}
-      />
-      <table>
-        <thead className="table-header">
-          <tr>
-            <th>Id</th>
-            <th>Product</th>
-            <th>Date</th>
-            <th>Count</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tbody className="table">
-          {products.map(check => (
-          <tr key={check.id}>
-            <td>{check.id}</td>
-            <td>{check.productId}</td>
-            <td>{check.date}</td>
-            <td>{check.count}</td>
-            <td>{check.price}</td>
-          </tr>
-          ))}
-        </tbody>
-      </table>
+    <div>
+        <div className="search-container">
+            <input
+            id='search-input'
+            type="text"
+            placeholder="Search..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            ref={searchInputRef}
+            className="search-input"
+            />
+        </div>
+        <div className="table-container">
+        <table>
+            <thead className="table-header">
+            <tr>
+                <th>Id</th>
+                <th>Product</th>
+                <th>Date</th>
+                <th>Count</th>
+                <th>Price</th>
+            </tr>
+            </thead>
+            <tbody className="table">
+            {products.map(check => (
+            <tr key={check.id}>
+                <td>{check.id}</td>
+                <td>{check.productId}</td>
+                <td>{check.date}</td>
+                <td>{check.count}</td>
+                <td>{check.price}</td>
+            </tr>
+            ))}
+            </tbody>
+        </table>
+        </div>
     </div>
   );
 }
