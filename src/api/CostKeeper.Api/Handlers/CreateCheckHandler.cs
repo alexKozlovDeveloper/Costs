@@ -37,7 +37,7 @@ namespace CostKeeper.Api.Handlers
 			var check = new Check
 			{
 				ProductId = request.ProductId,
-				Date = request.Date,
+				Date = request.Date.ToUniversalTime(),
 				Price = request.Price,
 				Count = request.Count
 			};
